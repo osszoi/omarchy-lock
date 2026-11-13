@@ -1,14 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "omarchy.lock",
+  "id": "eduardo.lock",
   "name": "Lock Screen",
   "version": "1.0.0",
-  "author": "Omarchy",
-  "description": "Quickshell session lock with separate password and fingerprint PAM flows.",
+  "author": "eduardo (based on omarchy.lock)",
+  "license": "MIT",
+  "description": "Omarchy's lock screen with a clock, avatar and an animated pill field. Same auth, PAM and IPC as omarchy.lock; the screen stays on 13s after a wake instead of 5s.",
   "omarchy": {
-    "capabilities": [
-      "authentication"
-    ]
+    "clonedFrom": "omarchy.lock"
   },
   "kinds": [
     "service"
@@ -16,5 +15,6 @@
   "keepLoaded": true,
   "entryPoints": {
     "service": "Service.qml"
-  }
+  },
+  "homepage": "https://github.com/osszoi/omarchy-lock"
 }

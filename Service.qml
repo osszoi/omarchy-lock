@@ -766,7 +766,8 @@ Item {
 
   Timer {
     id: idleBlankTimer
-    readonly property int idleMs: 5000
+    // 5000 upstream. the panel needs ~3s to light up after a wake, so that left about 2s on screen
+    readonly property int idleMs: 13000
     // A resume reaches this as soon as the kernel thaws, seconds before the
     // panel lights (on NVIDIA it waits out a VT switch and a modeset), so the
     // idle run-up blanked the lock just as it appeared.

@@ -225,7 +225,7 @@ Item {
         text: Qt.formatTime(root.now, "HH:mm")
         color: root.ink
         font.family: "Adwaita Sans"
-        font.pixelSize: Math.round(root.height * 0.182)
+        font.pixelSize: Math.round(root.height * 0.091)
         font.weight: Font.Light
         font.letterSpacing: -2
       }
